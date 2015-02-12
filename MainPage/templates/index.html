@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Boggler Word Generator</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/signin.css" rel="stylesheet">
+    
+    <script src="/static/js/jquery-1.11.2.min.js"></script>
+
+    <script src="/static/js/boggle.js"></script>
+
+
+  </head>
+
+  <body>
+
+    <div class="container">
+
+      <div class="form-signin">
+        <h2 class="boggleBoard-heading">Boggle 4x4 Board</h2>
+        <div class="col-md-6">
+          <table class="table">
+            <tr>
+                <td><input type="text" id="boggleInput1" class="form-control"  autofocus></td>
+                <td><input type="text" id="boggleInput2" class="form-control" ></td>
+                <td><input type="text" id="boggleInput3" class="form-control"  ></td>
+                <td><input type="text" id="boggleInput4" class="form-control"  ></td>
+            </tr>
+            <tr>
+              <td><input type="text" id="boggleInput5" class="form-control"  ></td>
+              <td><input type="text" id="boggleInput6" class="form-control" ></td>
+              <td><input type="text" id="boggleInput7" class="form-control"  ></td>
+              <td><input type="text" id="boggleInput8" class="form-control"  ></td>
+            </tr>
+            <tr>
+              <td><input type="text" id="boggleInput9" class="form-control"  ></td>
+              <td><input type="text" id="boggleInput10" class="form-control" ></td>
+              <td><input type="text" id="boggleInput11" class="form-control"  ></td>
+              <td><input type="text" id="boggleInput12" class="form-control"  ></td>
+            </tr>
+            <tr>
+              <td><input type="text" id="boggleInput13" class="form-control"  ></td>
+              <td><input type="text" id="boggleInput14" class="form-control" ></td>
+              <td><input type="text" id="boggleInput15" class="form-control"  ></td>
+              <td><input type="text" id="boggleInput16" class="form-control"  ></td>
+            </tr>
+          </table>
+        </div>
+        <div class="row">
+          <div class="col-sm-9">
+            <button class="btn btn-lg btn-primary btn-block" id="generate">Generate Words</button>
+          </div>
+          <div class="col-sm-3">
+            <button class="btn btn-lg btn-warning" id="reset">
+            <span class="glyphicon glyphicon-refresh"></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+  <h2 class="boggleBoard-answer">Boggle Answers</h2>
+    <div class="row answers">
+        <div class="col-sm-4">
+          <ul class="list-group" id="list1">
+          </ul>
+        </div><!-- /.col-sm-4 -->
+        <div class="col-sm-4">
+          <ul class="list-group" id="list2">
+          </ul>
+        </div><!-- /.col-sm-4 -->
+        <div class="col-sm-4">
+          <ul class="list-group" id="list3">
+          </ul>
+        </div><!-- /.col-sm-4 -->
+      </div>
+    </div> <!-- /container -->
+  </body>
+</html>
